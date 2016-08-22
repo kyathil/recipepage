@@ -1,0 +1,13 @@
+body {
+	 background-color: #ccffdd;
+}
+
+.form-container {
+	position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+h1 {
+	margin-left: 20%;
+}
