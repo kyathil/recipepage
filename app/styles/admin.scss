@@ -1,0 +1,48 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+body {
+	 background-color: #ccffdd;
+	 color: #6b6b47;
+	 font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+   position: relative;
+   color: #999966;
+   left: 1%;
+   top: 1em;
+ }
+
+ a:hover {
+   color: #6b6b47;
+   text-decoration: none;
+ }
+
+
+.form-container {
+	position: absolute;
+    left: 40%;
+    top: 30%;
+}
+
+h1 {
+	margin-left: 20%;
+}
+
+#btn-login {
+   display: inline-block;
+   background-color: #dfbf9f;
+}
+#btn-login:hover {
+   background-color: #d2a679;
+   color: black;
+}  
+
+#btn-login:active {
+   background-color: #cc9966;
+   color: black;
+}
+

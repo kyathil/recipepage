@@ -11,4 +11,8 @@ angular.module('recipepageApp')
   .controller('AdminCtrl', [ '$scope', function ($scope, $location) {
     $scope.title='Admin';
 
+	$scope.goBack = function(){
+	  $location.path( '../../index.html' );
+	};
+
   }]);
