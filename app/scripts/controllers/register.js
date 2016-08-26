@@ -8,11 +8,7 @@
  * Controller of the recipepageApp
  */
 angular.module('recipepageApp')
-  .controller('SearchCtrl', [ '$scope', function ($scope) {
-    $scope.title='Search Recipies';
-
-    $scope.changeText = function() {
-        $scope.title = 'Clicked!';
-    };
+  .controller('RegisterCtrl', [ '$scope', function ($scope) {
+    $scope.title='Register';
 
   }]);

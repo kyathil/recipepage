@@ -2,14 +2,16 @@
 <html>
  <head>
   <link rel="stylesheet" type="text/css" href="../styles/admin.css">
+  <script type="text/ng-view" id="/admin.html"></script>
  </head>
 
- <body>
+ <body ng-app="recipepageApp">
 	<a href="/" id="back">
 		<span class="glyphicon glyphicon-circle-arrow-left" id="back-icon">Back</span>
 	</a>
 
-	<div class="form-container">
+
+	<div class="form-container" ng-view>
 		<h1>Login</h1>
 	    <form method="post">
 	        <div class="form-group">
@@ -22,10 +24,16 @@
 	        </div>
 	        <div class="form-group">
 	            <button type="submit" class="btn btn-default" id="btn-login"><span class="glyphicon glyphicon-lock">Login</span></button>
-	            <a href="/register" class="btn btn-link">Register</a>
+	            <div ng-controller="RegisterCtrl as register">
+					<a href="/views/register.html" class="btn btn-link">{{ title }}</a>
+   				</div>
 	        </div>
 	    </form>
 	</div>
+	<script src="bower_components/angular-route/angular-route.js"></script>
+
+	 <script src="scripts/app.js"></script>
+	 <script src="scripts/controllers/admin.js"></script>
 
  </body>
  </html>

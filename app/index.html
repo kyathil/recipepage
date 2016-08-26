@@ -9,6 +9,7 @@
   </head>
   <body ng-app="recipepageApp">
 
+
     <!-- Add your site or application content here -->
 
     <div ng-controller="AdminCtrl">
@@ -22,9 +23,10 @@
     <div class="btnwrapper">
       <button ng-controller="RandomCtrl" class="btn" id="btn1" ng-click="changeText();"> {{ title }} </button>
       <button ng-controller="SearchCtrl" class="btn" id="btn2" ng-click="changeText();"> {{ title }} </button>
+      <div ng-controller="RegisterCtrl">
+        <a href="views/register.html"> {{ title }}</a>
+      </div>
     </div>
-
-
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -36,6 +38,7 @@
        ga('create', 'UA-XXXXX-X');
        ga('send', 'pageview');
     </script>
+
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
@@ -60,6 +63,7 @@
         <script src="scripts/controllers/admin.js"></script>
         <script src="scripts/controllers/random.js"></script>
         <script src="scripts/controllers/search.js"></script>
+        <script src="scripts/controllers/register.js"></script>
         <!-- endbuild -->
 </body>
 </html>

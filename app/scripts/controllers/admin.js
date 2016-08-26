@@ -8,11 +8,7 @@
  * Controller of the recipepageApp
  */
 angular.module('recipepageApp')
-  .controller('AdminCtrl', [ '$scope', function ($scope, $location) {
+  .controller('AdminCtrl', [ '$scope', function ($scope) {
     $scope.title='Admin';
-
-	$scope.goBack = function(){
-	  $location.path( '../../index.html' );
-	};
 
   }]);

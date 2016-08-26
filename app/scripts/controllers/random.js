@@ -8,7 +8,7 @@
  * Controller of the recipepageApp
  */
 angular.module('recipepageApp')
-  .controller('RandomCtrl', [ '$scope', function ($scope, $location) {
+  .controller('RandomCtrl', [ '$scope', function ($scope) {
     $scope.title='Random Search';
 
     $scope.changeText = function() {
