@@ -2,16 +2,17 @@
 <html>
  <head>
   <link rel="stylesheet" type="text/css" href="../styles/admin.css">
-  <script type="text/ng-view" id="/admin.html"></script>
  </head>
 
  <body ng-app="recipepageApp">
+ 	<div class="container" ng-view></div>
+
 	<a href="/" id="back">
 		<span class="glyphicon glyphicon-circle-arrow-left" id="back-icon">Back</span>
 	</a>
 
 
-	<div class="form-container" ng-view>
+	<div class="form-container">
 		<h1>Login</h1>
 	    <form method="post">
 	        <div class="form-group">
@@ -24,16 +25,37 @@
 	        </div>
 	        <div class="form-group">
 	            <button type="submit" class="btn btn-default" id="btn-login"><span class="glyphicon glyphicon-lock">Login</span></button>
-	            <div ng-controller="RegisterCtrl as register">
-					<a href="/views/register.html" class="btn btn-link">{{ title }}</a>
+	            <div ng-controller="RegisterCtrl">
+					<a href="/views/register.html">{{ title }}</a>
    				</div>
+
+   					<div ng-controller="RegisterCtrl">
+						<a ng-click="open();" >Open Popup</a>
+					</div>
+
 	        </div>
 	    </form>
 	</div>
-	<script src="bower_components/angular-route/angular-route.js"></script>
+	
+	<!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/angular/angular.js"></script>
+    <script src="../bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="../bower_components/angular-animate/angular-animate.js"></script>
+    <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="../bower_components/angular-messages/angular-messages.js"></script>
+    <script src="../bower_components/angular-resource/angular-resource.js"></script>
+    <script src="../bower_components/angular-route/angular-route.js"></script>
+    <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../bower_components/angular-touch/angular-touch.js"></script>
+    <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
 
-	 <script src="scripts/app.js"></script>
-	 <script src="scripts/controllers/admin.js"></script>
+	 <script src="../scripts/app.js"></script>
+	 <script src="../scripts/controllers/register.js"></script>
+	 <script src="../scripts/controllers/modalInstanceCtrl.js"></script>
 
  </body>
  </html>

@@ -16,7 +16,8 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.bootstrap'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -40,8 +41,6 @@ angular
       })
       .when('/register', {
         templateUrl: 'views/register.html',
-        controller: 'RegisterCtrl',
-        controllerAs: 'register'
       })
       .otherwise({
         redirectTo: '/'

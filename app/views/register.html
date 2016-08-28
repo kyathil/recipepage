@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <link rel="stylesheet" type="text/css" href="../styles/admin.css">
- </head>
+<html>	
 
- <body>
- 	<h>Hello!</h>
+	<div class="modal-header">
+		<h3 class="modal-title">Header</h3>
+	</div>
+	<div class="modal-body">
+		Main Content
+	</div>
+	<div class="modal-footer">
+		<button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+	</div>
 
-    <div ng-controller="RegisterCtrl as register">
-		<a href="/views/register.html" class="btn btn-link">{{ title }}</a>
-    </div>
 
- </body>
  </html>
