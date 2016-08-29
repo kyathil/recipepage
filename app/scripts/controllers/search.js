@@ -12,7 +12,7 @@ angular.module('recipepageApp')
     $scope.title='Search Recipies';
 
     $scope.changeText = function() {
-        $scope.title = 'Clicked!';
+        $scope.title = 'Nothing yet!';
     };
 
   }]);

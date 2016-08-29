@@ -14,4 +14,9 @@ angular.module('recipepageApp')
   $scope.close = function () {
     $uibModalInstance.dismiss('cancel');
   };
+
+  $scope.ok = function () {
+    $uibModalInstance.close();
+  };
+
   }]);

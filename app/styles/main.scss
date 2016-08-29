@@ -23,30 +23,77 @@ a:hover {
 
 .btnwrapper {
   position: absolute;
-  left: 40%;
-  top: 50%;
+  left: 30em;
+  top: 32em;
 }
 
 .btn {
   display: inline-block;
   margin-right: 0.005em;
-  background-color: #dfbf9f;
-  color: #3b2712;
+  background-color: #80dfff;
+  border: 0.05em solid #4dd2ff;
+  opacity: 0.85;
+  width: 10em;
+  font-size : 1m;
+  outline:none;
 }
 
 .btn:hover {
   background-color: #d2a679;
+  background-color: #4dd2ff;
+  border: 0.05em solid #1ac6ff;
   color: black;
 }  
 
 .btn:active {
   background-color: #cc9966;
+  background-color: #1ac6ff;
+  border: 0.05em solid #1ac6ff;
   color: black;
 }
 
 .logwrapper {
   position: absolute;
-  left: 36%;
-  top: 20%;
+  left: 25em;
+  top: 12em;
 }
 
+.container {
+  position:relative;
+}
+
+#cancel {
+   background-color: #80dfff;
+   border: 0.05em solid #4dd2ff;
+   opacity: 0.85;
+   width: 7em;
+   font-size : 1m;
+   outline:none;
+}
+#cancel:hover {
+   background-color: #4dd2ff;
+   border: 0.05em solid #1ac6ff;
+}  
+
+#cancel:active {
+   background-color: #1ac6ff;
+   border: 0.05em solid #1ac6ff;
+}
+
+#search {
+   background-color:#ddccff;
+   border: 0.05em solid #bb99ff;
+   opacity: 0.85;
+   width: 7em;
+   font-size : 1em;
+   outline:none;
+}
+#search:hover {
+   background-color: #bb99ff;
+   border: 0.05em solid #9966ff;
+}  
+
+#search:active {
+   background-color: #9966ff;
+   border: 0.05em solid #9966ff;
+}

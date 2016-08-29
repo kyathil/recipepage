@@ -1,0 +1,40 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+#cancel {
+   background-color: #80dfff;
+   border: 0.05em solid #4dd2ff;
+   opacity: 0.85;
+   width: 7em;
+   font-size : 1m;
+   outline:none;
+}
+#cancel:hover {
+   background-color: #4dd2ff;
+   border: 0.05em solid #1ac6ff;
+}  
+
+#cancel:active {
+   background-color: #1ac6ff;
+   border: 0.05em solid #1ac6ff;
+}
+
+#submit {
+   background-color:#66ff66;
+   border: 0.05em solid #33ff33;
+   opacity: 0.85;
+   width: 7em;
+   font-size : 1em;
+   outline:none;
+}
+#submit:hover {
+   background-color: #33ff33;
+   border: 0.05em solid #00e600;
+}  
+
+#submit:active {
+   background-color: #00e600;
+   border: 0.05em solid #00e600;
+}

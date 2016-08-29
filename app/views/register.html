@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html>	
+  <head>
+  	<link rel="stylesheet" type="text/css" href="../styles/register.css">
+  	<link rel="stylesheet" type="text/css" href="../styles/admin.css">
+  </head>
 
 	<div class="modal-header">
-		<h3 class="modal-title">Header</h3>
+		<h3 class="modal-title">Registration</h3>
 	</div>
 	<div class="modal-body">
-		Main Content
+		<form method="post">
+		        <div class="form-group">
+		            <label for="username">Username:</label>
+		            <input type="text" name="username" id="username"  class="form-control" />
+		        </div>
+		        <div class="form-group">
+		            <label for="password">Password:</label>
+		            <input type="password" name="password" id="password" class="form-control" />
+		        </div>
+		        <div class="form-group">
+		            <label for="firstname">First Name:</label>
+		            <input type="text" name="firstname" id="firstname" class="form-control" />
+		        </div>
+		        <div class="form-group">
+		            <label for="lastname">Last Name:</label>
+		            <input type="text" name="lastname" id="firstname" class="form-control" />
+		        </div>
+		        <div class="form-group">
+		            <label for="email">Email:</label>
+		            <input type="text" name="email" id="email" class="form-control" />
+		        </div>
+		        
+		    </form>
 	</div>
 	<div class="modal-footer">
-		<button class="btn btn-warning" type="button" ng-click="close()">Cancel</button>
+		<button class="btn btn-default" type="submit" id="submit" ng-click="ok();">Submit</button>
+		<button class="btn btn-default" type="button" id="cancel" ng-click="close();">Cancel</button>
 	</div>
 
 

@@ -8,11 +8,13 @@
  * Controller of the recipepageApp
  */
 angular.module('recipepageApp')
-  .controller('RandomCtrl', [ '$scope', function ($scope) {
+  .controller('RandomCtrl', [ '$scope', '$uibModal', function ($scope, $uibModal) {
     $scope.title='Random Search';
 
-    $scope.changeText = function() {
-        $scope.title = 'Clicked!';
-    };
-
+	$scope.open = function () {
+		var modalInstance = $uibModal.open({
+			templateUrl: '../views/random.html',
+			controller: 'ModalInstanceCtrl'
+		});
+	}
   }]);
